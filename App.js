@@ -24,6 +24,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import codePush from "react-native-code-push"
+
 const App: () => React$Node = () => {
   return (
     <>
@@ -71,7 +73,7 @@ const App: () => React$Node = () => {
     </>
   );
 };
-
+codePush(App)
 const styles = StyleSheet.create({
   scrollView: {
     backgroundColor: Colors.lighter,
